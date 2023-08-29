@@ -13,7 +13,8 @@
 #navbar {
     display: flex;
     justify-content: space-between;
-    /* background-color: yellow;   */
+    align-items: center;
+    min-height: 50px;
     text-transform: uppercase;
 }
 
@@ -21,8 +22,9 @@
     color: #000;
     font-size: large;
     font-weight: bold;
+    font-size: 1.8rem;
     text-decoration: none;
-    padding: 15px;
+    padding: 0 15px;
 }
 
 .logo-txt:hover {
@@ -36,6 +38,8 @@
 
 .navbar {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .icon {
@@ -52,7 +56,6 @@
     font-size: large;
     font-weight: bold;
     text-decoration: none;
-    
     /* margin: 15px; */
     padding: 0 30px;
 }
@@ -64,6 +67,56 @@
     box-shadow: 10px 0 30px black;
     border-radius: 50%;
 }
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.line{
+    display: block;
+    height: 7px;
+    width: 35px;
+    margin: 5px auto;
+    background-color: red;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 5px 8px 15px rgb(51, 51, 51);
+}
+@media only screen and (max-width: 768px){
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .line:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .line:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .line:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .navbar{
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s ;
+    } 
+    .navbar li{
+        margin: 16px 0;
+    }
+    .navbar.active{
+        left: 0;
+    }
+
+    .footbox h2{
+    font-size: 1rem;
+    margin: 10px;
+    }
+}
+
 
 /* footer site */
 #footer {
@@ -74,25 +127,12 @@
     padding: 10px;
     color: white;
 }
-
-#footer a {
-    font-size: 20px;
-    color: whitesmoke;
-}
-
-#footer a:hover {
-    color: red;
-}
 .footer{
-    display: flex;
+    display: inherit;
+    position: relative;
 }
 .footbox{
-    display :flex;
-    flex-direction: column;
     text-align: center;
-    /* border: 2px solid white; */
-    width: 300px;
-    height: 200px;
     margin: 10px;
 }
 .footbox h2{
@@ -100,19 +140,28 @@
     margin: 20px;
 }
 .footlist{
-    display: flex;
-    flex-direction: column;
     list-style: none;
 }
 .footlist li a{
     margin: 10px;
+    font-size: 18px;
+    color: white;
     text-decoration: none;
+}
+.footlist a:hover {
+    color: red;
 }
 .footbot{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    /* height: 250px; */
+    font-size: 20px;
+}
+.footbot a{
+    color: white;
+}
+.footbot a:hover{
+    color: red;
 }
 #smlogo img {
     transition: all 0.2s;
@@ -585,10 +634,7 @@
     text-shadow: 5px 10px 20px black;
     text-overflow: inherit;
 }
-/* 
-width: 15vw;
-padding: 10px;
-padding-left: 20px;
-margin: 15px;
 
-*/
+@media only screen and (max-width: 1140px){
+    
+}
