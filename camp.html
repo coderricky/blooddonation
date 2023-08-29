@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Camp</title>
+    <link rel="icon" href="/blooddonation/images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/blooddonation/style.css">
+    <script src="/blooddonation/states.js"></script>
+</head>
+
+<body>
+    <div id="navbar">
+        <div class="logo">
+            <img src="/blooddonation/images/favicon.png" class="icon">
+            <a href="/blooddonation/index.html" class="logo-txt">Blood Donation</a>
+        </div>
+        <nav class="navbar">
+            <li><a href="/blooddonation/index.html">About</a></li>
+            <li><a href="/blooddonation/bloodlook.html">Looking for Blood</a></li>
+            <li><a href="/blooddonation/donateblood.html">Donate Blood</a></li>
+            <li><a href="/blooddonation/signin.html">Sign In</a></li>
+        </nav>
+    </div>
+    <div id="camp">
+        <div id="contactBox" class="camp">
+            <form class="contact contact-cp">
+                <h2 class="heading cp-heading">Register for Camp</h2>
+                <div class="box">
+                    <div class="form-row">
+                        <div class="col-md-2">
+                            <input type="text" class="form-control" placeholder="Full Name">
+                        </div>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control" placeholder="Last Name">
+                        </div>
+                        <div class="col-md-12">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <input type="password" class="form-control" placeholder="Password">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="password" class="form-control" placeholder="Confirm Password">
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="col-md-15">
+                        <input type="text" class="form-addr" placeholder="Enter Your Address">
+                    </div>
+                    <div class="col-md-15">
+                        <input type="text" class="form-addr" placeholder="Enter Your Address 2">
+                    </div>
+                </div>
+                <div class="box box-cp">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" id="inputCity" placeholder="City">
+                    </div>
+                    <div class="form-row">
+                        <select onchange="print_city('state', this.selectedIndex);" id="sts" name="stt"
+                            class="form-control form-select cp-select" required>
+                            <option>Select State</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <input type="text" class="form-control" placeholder="Zipcode">
+                    </div>
+                </div>
+                <button type="submit" class="btn">Sumbit</button>
+            </form>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="footer">
+            <div class="footbox">
+                <h2>Looking for Blood</h2>
+                <div class="footlist">
+                    <li><a class="txt" href="/blooddonation/bloodlook.html">Blood Availability Search</a></li>
+                    <li><a class="txt" href="/blooddonation/bloodlook.html">Blood Bank Directory</a></li>
+                </div>
+            </div>
+            <div class="footbox">
+                <h2>Want to Donate Blood</h2>
+                <div class="footlist">
+                    <li><a class="txt" href="/blooddonation/donateblood.html">Blood Donation Campus</a></li>
+                    <li><a class="txt" href="/blooddonation/signin.html">Doner LogIn</a></li>
+                    <li><a class="txt" href="/blooddonation/index.html">About Blood Donation</a></li>
+                    <li><a class="txt" href="/blooddonation/camp.html">Register Voluntary Blood Camp</a></li>
+                </div>
+            </div>
+            <div class="footbox">
+                <h2>Blood Bank LogIn</h2>
+                <div class="footlist">
+                    <li><a class="txt" href="/blooddonation/signin.html">LogIn Page</a></li>
+                    <li><a class="txt" href="/blooddonation/camp.html">Add Your Blood Bank</a></li>
+                </div>
+            </div>
+            <div class="footbox">
+                <h2>About Us</h2>
+                <div class="footlist">
+                    <li><a class="txt" href="/blooddonation/index.html">About Blood</a></li>
+                    <li><a class="txt" href="#">Notification</a></li>
+                </div>
+            </div>
+        </div>
+        <div class="footbot">
+            <a href="" class="site">www.blooddonation.com</a>
+            <div id="smlogo">
+                <img src="/blooddonation/images/yt.png" alt="yt" class="smlogo">
+                <img src="/blooddonation/images/fb.png" alt="fb" class="smlogo">
+                <img src="/blooddonation/images/insta.png" alt="insta" class="smlogo">
+                <img src="/blooddonation/images/twitter.png" alt="tw" class="smlogo">
+            </div>
+        </div>
+    </footer>
+    <script language="javascript">print_state("sts");</script>
+
+</body>
+
+</html>

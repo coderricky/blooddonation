@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Blood</title>
+    <link rel="icon" href="/blooddonation/images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/blooddonation/style.css">
+    <script src="/blooddonation/states.js"></script>
+</head>
+
+<body>
+    <div id="navbar">
+        <div class="logo">
+            <img src="/blooddonation/images/favicon.png" class="icon">
+            <a href="/blooddonation/index.html" class="logo-txt">Blood Donation</a>
+        </div>
+        <nav class="navbar">
+            <li><a href="/blooddonation/index.html">About</a></li>
+            <li><a href="/blooddonation/bloodlook.html">Looking for Blood</a></li>
+            <li><a href="/blooddonation/donateblood.html">Donate Blood</a></li>
+            <li><a href="/blooddonation/signin.html">Sign In</a></li>
+        </nav>
+    </div>
+    <div id="bld-db">
+        <div id="sec-1">
+            <h4 class="heading">Donation Camp Schedule</h4>
+            <div class="sec1-1">
+                <table class="table">
+                    <tr class="t-row">
+                        <th class="t-header tb-bnk th-1">Search Blood Stock</th>
+                        <th class="tb-bnk"></th>
+                        <th class="tb-bnk"></th>
+                    </tr>
+                    <tr class="t-row">
+                        <td class="t-data td-1">
+                            <div class="mb-3">
+                                <select onchange="print_city('state', this.selectedIndex);" id="sts" name="stt"
+                                    class="form-control form-select" required>
+                                    <option>Select State</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td class="t-data td-2">
+                            <div class="mb-3">
+                                <select id="state" class="form-control form-select" required>
+                                    <option>-</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td class="t-data td-3">
+                            <div>
+                                <input type="submit" name="Search" value="Search" class="btn dcbtn">
+                            </div>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="footer">
+            <div class="footbox">
+                <h2>Looking for Blood</h2>
+                <div class="footlist">
+                    <li><a class="txt" href="/blooddonation/bloodlook.html">Blood Availability Search</a></li>
+                    <li><a class="txt" href="/blooddonation/bloodlook.html">Blood Bank Directory</a></li>
+                </div>
+            </div>
+            <div class="footbox">
+                <h2>Want to Donate Blood</h2>
+                <div class="footlist">
+                    <li><a class="txt" href="/blooddonation/donateblood.html">Blood Donation Campus</a></li>
+                    <li><a class="txt" href="/blooddonation/signin.html">Doner LogIn</a></li>
+                    <li><a class="txt" href="/blooddonation/index.html">About Blood Donation</a></li>
+                    <li><a class="txt" href="/blooddonation/camp.html">Register Voluntary Blood Camp</a></li>
+                </div>
+            </div>
+            <div class="footbox">
+                <h2>Blood Bank LogIn</h2>
+                <div class="footlist">
+                    <li><a class="txt" href="/blooddonation/signin.html">LogIn Page</a></li>
+                    <li><a class="txt" href="/blooddonation/camp.html">Add Your Blood Bank</a></li>
+                </div>
+            </div>
+            <div class="footbox">
+                <h2>About Us</h2>
+                <div class="footlist">
+                    <li><a class="txt" href="/blooddonation/index.html">About Blood</a></li>
+                    <li><a class="txt" href="#">Notification</a></li>
+                </div>
+            </div>
+        </div>
+        <div class="footbot">
+            <a href="" class="site">www.blooddonation.com</a>
+            <div id="smlogo">
+                <img src="/blooddonation/images/yt.png" alt="yt" class="smlogo">
+                <img src="/blooddonation/images/fb.png" alt="fb" class="smlogo">
+                <img src="/blooddonation/images/insta.png" alt="insta" class="smlogo">
+                <img src="/blooddonation/images/twitter.png" alt="tw" class="smlogo">
+            </div>
+        </div>
+    </footer>
+    <script language="javascript">print_state("sts");</script>
+</body>
+
+</html>
