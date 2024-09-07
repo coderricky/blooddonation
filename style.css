@@ -168,6 +168,9 @@
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     float: left;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
